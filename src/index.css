@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+  --clr-violet: hsl(235, 69%, 61%);
+  --clr-light-violet: hsl(235, 82%, 77%);
+  --clr-very-light-violet: hsl(235, 82%, 95%);
+  --clr-btn-secondary-hover: hsl(235, 82%, 85%);
+  --clr-very-dark-blue: hsl(219, 29%, 14%);
+  --clr-midnight: hsl(220, 29%, 10%);
+  --clr-light-midnight: hsl(220, 29%, 25%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-light-gray: hsl(210, 22%, 96%);
+  --clr-gray-hover: hsl(210, 10%, 40%);
+  --clr-gray: hsl(212, 23%, 69%);
+  --clr-dark-gray: hsl(214, 17%, 51%);
+
+  --ff-main: 'Kumbh Sans', sans-serif;
+  --border-radius: .5rem;
+
+  --btn-secondary-color: var(--clr-violet);
+  --btn-secondary-bg-color: var(--clr-very-light-violet);
+  --btn-secondary-hover: var(--clr-btn-secondary-hover);
+}
+
+.dark-mode {
+  --btn-secondary-color: var(--clr-white);
+  --btn-secondary-bg-color: var(--clr-light-midnight);
+  --btn-secondary-hover: var(--clr-gray-hover);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+body {
+  font-family: var(--ff-main);
+}
+
+.button {
+  outline: 0;
+  border: 0;
+  padding: 1rem 2.5rem;
+  font-weight: bold;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.button-primery {
+  color: var(--clr-white);
+  background-color: var(--clr-violet);
+}
+
+.button-primery:hover {
+  background-color: var(--clr-light-violet);
+}
+
+
+.button-secondary {
+  color: var(--btn-secondary-color);
+  background-color: var(--btn-secondary-bg-color);
+}
+
+.button-secondary:hover {
+  background-color: var(--btn-secondary-hover);
+}
