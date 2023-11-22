@@ -1,3 +1,6 @@
+.header-input {
+  position: relative;
+}
 
 .cards-container {
   display: grid;
