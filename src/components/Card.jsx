@@ -8,7 +8,10 @@ export default function Card({ logo, postedAt, contract, position, company, loca
             </div>
             <div>
                 <div>
-                    <p className='post-aded'>{postedAt} <span className='contract-type'>{contract}</span></p>
+                    <div className='flex post'>
+                        <p className='post-aded'>{postedAt}</p>
+                        <p className='contract-type'>{contract}</p>
+                    </div>
                     <h3 className='position'>{position}</h3>
                     <p className='company-name'>{company}</p>
                 </div>
