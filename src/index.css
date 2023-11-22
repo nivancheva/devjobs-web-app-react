@@ -73,7 +73,6 @@ body {
 }
 
 .container {
-  max-width: 327px;
   width: 90%;
   margin-inline: auto;
 }
@@ -120,9 +119,10 @@ form {
   color: var(--clr-input-text);
   background-color: var(--clr-input-bg);
   text-transform: capitalize;
+  width: 100%;
 }
 
-.search-icon {
+.input-icon {
   position: absolute;
   bottom: 50%;
   left: 2rem;
@@ -130,9 +130,6 @@ form {
 }
 
 @media (min-width: 768px) {
-  .container {
-    max-width: 689px;
-  }
 }
 
 @media (min-width: 850px) {
