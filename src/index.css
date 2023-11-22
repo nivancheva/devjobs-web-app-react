@@ -72,6 +72,12 @@ body {
   align-items: center;
 }
 
+.container {
+  max-width: 327px;
+  width: 90%;
+  margin-inline: auto;
+}
+
 .button {
   outline: 0;
   border: 0;
@@ -121,4 +127,16 @@ form {
   bottom: 50%;
   left: 2rem;
   transform: translate(0, 50%);
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 689px;
+  }
+}
+
+@media (min-width: 850px) {
+  .container {
+    max-width:1110px;
+  }
 }

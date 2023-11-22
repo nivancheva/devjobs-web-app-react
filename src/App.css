@@ -1,13 +1,7 @@
-.to_remove {
-  display: grid;
-  gap:2rem;
-  margin: 3rem;
-}
 
 .cards-container {
   display: grid;
   gap: 3.063rem;
-  margin-inline: auto;
 }
 
 @media (min-width:768px) {

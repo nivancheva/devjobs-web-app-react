@@ -1,7 +1,7 @@
 .card-container {
     background-color: var(--card-color-bg);
     color: var(--card-color-text);
-    max-width: 327px;
+    /* max-width: 327px; */
     padding: 3.063rem 0 2rem 2rem;
     border-radius: var(--border-radius);
     position: relative;

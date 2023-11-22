@@ -1,20 +1,22 @@
 import './App.css'
-import Toggle from './components/Toggle';
+
 import Button from './components/Button';
 import Checkbox from './components/Checkbox';
 import Card from './components/Card';
 import dataJson from './data.json';
 import { useState } from 'react';
+import Header from './components/Header';
 
 function App() {
   const [cards] = useState(dataJson);
 
   return (
-    <div className='to_remove'>
+    <div>
+      <Header />
       <Button primary>Apply now</Button>
-      <Toggle />
-      <Checkbox />
-      <div className='cards-container'>
+      
+      {/* <Checkbox /> */}
+      <div className='container cards-container'>
           {cards.map((card, idx) => {
             return (
               <Card key={idx} {...card}/>

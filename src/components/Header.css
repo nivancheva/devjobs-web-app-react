@@ -1,0 +1,21 @@
+.header-wrapper {
+    justify-content: space-between;
+    padding: 2rem 1.5rem 4.5rem;
+    background-image: url('/assets/mobile/bg-pattern-header.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (min-width:768px) {
+    .header-wrapper {
+        background-image: url('/assets/tablet/bg-pattern-header.svg');
+        padding: 2.625rem 2.5rem 5.375rem;
+    }
+}
+
+@media (min-width:850px) {
+    .header-wrapper {
+        background-image: url('/assets/desktop/bg-pattern-header.svg');
+        padding: 2.813rem 10.313rem 5.313rem;
+    }
+}
