@@ -13,7 +13,7 @@ function App() {
   return (
     <div>
       <Header />
-      <Button primary>Apply now</Button>
+      {/* <Button primary>Apply now</Button> */}
       
       {/* <Checkbox /> */}
       <div className='container cards-container'>

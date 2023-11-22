@@ -1,7 +1,7 @@
 .card-container {
     background-color: var(--card-color-bg);
     color: var(--card-color-text);
-    padding: 3.063rem 0 2rem 2rem;
+    padding: 3.063rem 2rem 2rem 2rem;
     border-radius: var(--border-radius);
     position: relative;
     line-height: 1.7;
