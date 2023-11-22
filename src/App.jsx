@@ -21,33 +21,37 @@ function App() {
     setCards(cards => [...cards, ...dataJson.slice(cards.length)]);
   }
 
+  function renderContent() {
+    if (selectedJob) {
+      return <h1>{selectedJob.position}</h1>;
+    }
+    else {
+      return <div>
+          <Inputs />
+          
+          <div className='container cards-container'>
+              {cards.map((card) => {
+                return (
+                  <Card key={card.id} {...card} onClick={onJobClick}/>
+                )
+              })}
+          </div>
+          
+          { dataJson.length !== cards.length &&
+            <div>
+              <Button primary onClick={onLoadMoreClick}>Load More</Button>
+            </div>
+          }
+          
+        </div>;
+    }
+  }
+
   return (
     <div className='wrapper'>
 
       <Header />
-      {
-        selectedJob ?
-          <h1>{selectedJob.position}</h1>
-          :
-          <div>
-            <Inputs />
-            
-            <div className='container cards-container'>
-                {cards.map((card) => {
-                  return (
-                    <Card key={card.id} {...card} onClick={onJobClick}/>
-                  )
-                })}
-            </div>
-            
-            { dataJson.length !== cards.length &&
-              <div>
-                <Button primary onClick={onLoadMoreClick}>Load More</Button>
-              </div>
-            }
-            
-          </div>
-      }
+      { renderContent() }
 
     </div>
   )
