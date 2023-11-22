@@ -22,6 +22,7 @@
   --btn-secondary-hover: var(--clr-btn-secondary-hover);
   --clr-input-text: var(--clr-very-dark-blue);
   --clr-input-bg: var(--clr-white);
+  --page-bg-color: var(--clr-light-gray);
 }
 
 .dark-mode {
@@ -30,6 +31,7 @@
   --btn-secondary-hover: var(--clr-gray-hover);
   --clr-input-text: var(--clr-white);
   --clr-input-bg: var(--clr-very-dark-blue);
+  --page-bg-color: var(--clr-midnight);
 }
 
 *, *::before, *::after {
@@ -56,6 +58,12 @@ input, button, textarea, select {
 
 body {
   font-family: var(--ff-main);
+  background-color: var(--page-bg-color);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
 }
 
 .button {
