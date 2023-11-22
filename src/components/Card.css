@@ -26,7 +26,8 @@
 }
 
 .post {
-    gap: 1.75rem;
+    --gap: 1.75rem;
+    gap: var(--gap);
 }
 
 .post-aded {
@@ -38,7 +39,7 @@
     content: '';
     bottom: 50%;
     right: 0;
-    transform: translate(.875rem, 100%);
+    transform: translate(calc(var(--gap) / 2), 100%);
     background-color:var(--clr-gray);
     width: 3px;
     height: 3px;
