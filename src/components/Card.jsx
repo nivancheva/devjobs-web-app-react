@@ -1,9 +1,9 @@
 import './Card.css';
 
-export default function Card({ logo, postedAt, contract, position, company, location }) {
+export default function Card({ logo, postedAt, contract, position, company, location,  logoBackground }) {
     return (
         <div className='card-container'>
-            <div className='logo-wrapper'>
+            <div className='logo-wrapper' style={{backgroundColor: logoBackground}}>
                 <img className='logo' src={logo}/>
             </div>
             <div>

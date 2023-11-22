@@ -82,12 +82,12 @@ body {
   cursor: pointer;
 }
 
-.button-primery {
+.button-primary {
   color: var(--clr-white);
   background-color: var(--clr-violet);
 }
 
-.button-primery:hover {
+.button-primary:hover {
   background-color: var(--clr-light-violet);
 }
 

@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className='to_remove'>
-      <Button buttonClass='button-primery' nameButton='Apply now'/>
+      <Button primary>Apply now</Button>
       <Toggle />
       <Checkbox />
       <div className='cards-container'>
