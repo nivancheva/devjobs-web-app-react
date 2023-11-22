@@ -4,11 +4,9 @@ import logo from '../assets/images/logo.svg'
 
 export default function Header() {
     return (
-        <div className='header-wrapper'>
-            <div className='flex container header'>
-                <img src={logo}/>
-                <Toggle />
-            </div>
+        <div className='flex container header'>
+            <img src={logo}/>
+            <Toggle />
         </div>
     )
 }

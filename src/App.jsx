@@ -7,23 +7,35 @@ import Inputs from './components/Inputs';
 
 function App() {
   const [cards] = useState(dataJson);
+  const [selectedJob, setSelectedJob] = useState();
+
+  function onJobClick(id) {
+    const job = cards.find(c => c.id === id);
+    setSelectedJob(job);
+  }
 
   return (
-    <div>
-      <div className='header-input'>
-        <Header />
-      
-        <Inputs />
-      </div>
-      
-      
-      <div className='container cards-container'>
-          {cards.map((card, idx) => {
-            return (
-              <Card key={idx} {...card}/>
-            )
-          })}
-        </div>
+    <div className='wrapper'>
+
+      <Header />
+      {
+        selectedJob ?
+          <h1>{selectedJob.position}</h1>
+          :
+          <div>
+            <Inputs />
+            
+            <div className='container cards-container'>
+                {cards.map((card) => {
+                  return (
+                    <Card key={card.id} {...card} onClick={onJobClick}/>
+                  )
+                })}
+            </div>
+          </div>
+      }
+
+        
     </div>
   )
 }

@@ -1,6 +1,21 @@
-.header-input {
-  position: relative;
+.wrapper {
+  background-image: url('/assets/mobile/bg-pattern-header.svg');
+  background-repeat: no-repeat;
 }
+
+@media (min-width:768px) {
+  .wrapper {
+      background-image: url('/assets/tablet/bg-pattern-header.svg');
+  }
+}
+
+@media (min-width:850px) {
+  .wrapper {
+      background-image: url('/assets/desktop/bg-pattern-header.svg');
+  }
+}
+
+
 
 .cards-container {
   display: grid;
