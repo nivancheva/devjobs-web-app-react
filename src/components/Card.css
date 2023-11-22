@@ -1,0 +1,50 @@
+.card-container {
+    background-color: var(--card-color-bg);
+    color: var(--card-color-text);
+    max-width: 327px;
+    padding: 3.063rem 0 2rem 2rem;
+    border-radius: var(--border-radius);
+    position: relative;
+    line-height: 1.7;
+}
+
+.logo-wrapper {
+    position: absolute;
+    top: 0;
+    transform: translate(0, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 1rem;
+    background-color: red;
+}
+
+.logo {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+
+.position {
+    color: var(--card-position-color);
+    font-size: 1.25rem;
+}
+
+.company-location {
+    font-size: .875rem;
+    color: var(--clr-violet);
+    margin-top: 2.5rem;
+    font-weight: bold;
+}
+
+@media (min-width:768px) {
+    .card-container {
+        max-width: 339px;
+    }
+}
+
+@media (min-width:850px) {
+    .card-container {
+        max-width: 350px;
+    }
+}

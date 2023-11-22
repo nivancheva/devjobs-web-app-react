@@ -23,6 +23,9 @@
   --clr-input-text: var(--clr-very-dark-blue);
   --clr-input-bg: var(--clr-white);
   --page-bg-color: var(--clr-light-gray);
+  --card-color-bg: var(--clr-white);
+  --card-color-text: var(--clr-gray);
+  --card-position-color: var(--clr-very-dark-blue);
 }
 
 .dark-mode {
@@ -32,6 +35,9 @@
   --clr-input-text: var(--clr-white);
   --clr-input-bg: var(--clr-very-dark-blue);
   --page-bg-color: var(--clr-midnight);
+  --card-color-bg: var(--clr-very-dark-blue);
+  --card-color-text: var(--clr-gray);
+  --card-position-color: var(--clr-white);
 }
 
 *, *::before, *::after {
