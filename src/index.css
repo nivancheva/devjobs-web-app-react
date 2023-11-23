@@ -26,6 +26,7 @@
   --card-color-bg: var(--clr-white);
   --card-color-text: var(--clr-gray);
   --card-position-color: var(--clr-very-dark-blue);
+  --job-decription-color: var(--clr-dark-gray);
 }
 
 .dark-mode {
@@ -38,6 +39,7 @@
   --card-color-bg: var(--clr-very-dark-blue);
   --card-color-text: var(--clr-gray);
   --card-position-color: var(--clr-white);
+  --job-decription-color: var(--clr-gray);
 }
 
 *, *::before, *::after {
@@ -134,6 +136,10 @@ form {
 
 @media (min-width: 850px) {
   .container {
-    max-width:1110px;
+    max-width: 1110px;
+  }
+
+  .job-container {
+    max-width: 730px;
   }
 }
