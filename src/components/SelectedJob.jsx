@@ -8,7 +8,7 @@ export default function SelectedJob({ job }) {
                 
             </div>
 
-            <div className='grid-gap-4'>
+            <div className='job-details grid gap-4'>
                 <div>
                     <div className='flex post'>
                         <p className='post-aded'>{job.postedAt}</p>
@@ -20,7 +20,7 @@ export default function SelectedJob({ job }) {
                             <p className='company-location location_job_dscription'>United Kingdom</p>
                         </div>
                         <div className='button-wrapper'>
-                            <Button primary>Apply now</Button>
+                            <Button href={job.apply} primary>Apply now</Button>
                         </div>
                     </div>
 
@@ -28,7 +28,7 @@ export default function SelectedJob({ job }) {
                 </div>
 
 
-                <div className='grid-gap-2'>            
+                <div className='grid gap-2'>            
                     <h3>Requirements</h3>
                     <p>{job.requirements.content}</p>
                     <ul>
@@ -53,5 +53,6 @@ export default function SelectedJob({ job }) {
                 </div>
             </div>
         </div>
+
     )
 }

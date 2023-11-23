@@ -74,9 +74,26 @@ body {
   align-items: center;
 }
 
+.grid {
+  display: grid;
+}
+
+.gap-4 {
+  gap: 2.5rem;
+}
+
+.gap-2 {
+  gap: 1.5rem
+}
+
 .container {
   width: 90%;
   margin-inline: auto;
+}
+
+a.button {
+  text-decoration: none;
+  display: inline-block;
 }
 
 .button {
@@ -106,6 +123,12 @@ body {
 
 .button-secondary:hover {
   background-color: var(--btn-secondary-hover);
+}
+
+@media (max-width:767rem) {
+    .button {
+        width: 100%;
+    }
 }
 
 form {
@@ -163,15 +186,8 @@ li {
   counter-increment: li
 }
 
-@media (min-width: 768px) {
-}
-
 @media (min-width: 850px) {
   .container {
     max-width: 1110px;
-  }
-
-  .job-container {
-    max-width: 730px;
   }
 }
