@@ -38,7 +38,7 @@ function App() {
           </div>
           
           { dataJson.length !== cards.length &&
-            <div>
+            <div className='load-more_button container'>
               <Button primary onClick={onLoadMoreClick}>Load More</Button>
             </div>
           }
