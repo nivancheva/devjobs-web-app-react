@@ -48,6 +48,11 @@
 .position {
     color: var(--card-position-color);
     font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.position:hover {
+    color: var(--clr-gray);
 }
 
 .company-location {

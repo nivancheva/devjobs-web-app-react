@@ -5,12 +5,13 @@ import { useState } from 'react';
 import Header from './components/Header';
 import Inputs from './components/Inputs';
 import Button from './components/Button';
+import SelectedJob from './components/SelectedJob';
 
 const PAGE_SIZE = 12;
 
 function App() {
   const [cards, setCards] = useState(dataJson.slice(0, PAGE_SIZE));
-  const [selectedJob, setSelectedJob] = useState();
+  const [selectedJob, setSelectedJob] = useState(dataJson[0]);
 
   function onJobClick(id) {
     const job = cards.find(c => c.id === id);
@@ -23,7 +24,8 @@ function App() {
 
   function renderContent() {
     if (selectedJob) {
-      return <h1>{selectedJob.position}</h1>;
+      return <SelectedJob job={selectedJob}/>
+
     }
     else {
       return <div>
