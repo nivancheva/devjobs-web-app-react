@@ -133,6 +133,7 @@ form {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 ul li::before {
@@ -141,12 +142,13 @@ ul li::before {
   font-weight: bold;
   display: inline-block; 
   width: 1em;
-  margin-left: -1em;
+  margin-right: 1.5rem;
 }
 
 ol {
   list-style: none;
   counter-reset: li;
+  padding: 0;
 }
 
 li::before {
@@ -154,7 +156,7 @@ li::before {
   color: var(--clr-violet);
   display: inline-block;
   width: 1em;
-  margin-left: -1em
+  margin-right: 1.25rem;
 }
 
 li {
