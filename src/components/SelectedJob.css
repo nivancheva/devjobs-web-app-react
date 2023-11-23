@@ -25,6 +25,20 @@
     margin-top: 0;
 }
 
+@media (max-width:767rem) {
+    .job-position-wrapper {
+        margin-bottom: 1.563rem;
+    }
+    
+    .mobile-button {
+        width: 100%;
+    }
+
+    .button-wrapper {
+        padding-block: 1.563rem;
+    }
+}
+
 @media (min-width:768px) {
     .header_selected-job {
         display: flex;
@@ -35,6 +49,10 @@
     .job-container {
         margin-block: 8.188rem 3.313rem;
         padding: 3rem;
+    }
+
+    .job-description {
+        margin-top: 2.5rem;;
     }
 }
 

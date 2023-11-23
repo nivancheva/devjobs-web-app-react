@@ -15,15 +15,18 @@ export default function SelectedJob({ job }) {
                         <p className='contract-type'>{job.contract}</p>
                     </div>
                     <div className='header_selected-job'>
-                        <div>
+                        <div className='job-position-wrapper'>
                             <h1 className='job_position'>{job.position}</h1>
                             <p className='company-location location_job_dscription'>United Kingdom</p>
                         </div>
-                        <Button primary>Apply now</Button>
+                        <div className='button-wrapper'>
+                            <Button primary>Apply now</Button>
+                        </div>
                     </div>
+
+                    <p className='job-description'>{job.description}</p>
                 </div>
 
-                <p>{job.description}</p>
 
                 <div className='grid-gap-2'>            
                     <h3>Requirements</h3>
@@ -40,13 +43,13 @@ export default function SelectedJob({ job }) {
                 <div className='grid-gap-2'>
                     <h3>What You Will Do</h3>
                         <p>{job.role.content}</p>
-                        <ul>
+                        <ol>
                             {
                                 job.role.items.map(role => {
                                     return <li key={role}>{role}</li>
                                 })
                             }
-                        </ul>
+                        </ol>
                 </div>
             </div>
         </div>

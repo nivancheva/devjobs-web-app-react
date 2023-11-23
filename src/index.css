@@ -131,6 +131,36 @@ form {
   transform: translate(0, 50%);
 }
 
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "\2022";
+  color: var(--clr-violet);
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+ol {
+  list-style: none;
+  counter-reset: li;
+}
+
+li::before {
+  content: counter(li);
+  color: var(--clr-violet);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em
+}
+
+li {
+  counter-increment: li
+}
+
 @media (min-width: 768px) {
 }
 
