@@ -4,6 +4,7 @@ import Checkbox from '../components/Checkbox';
 import Button from '../components/Button';
 import serchIcon from '../assets/images/icon-search.svg'
 import locationIcon from '../assets/images/icon-location.svg';
+import iconFilter from '../assets/images/icon-filter.svg'
 
 export default function Inputs() {
     return (
@@ -16,6 +17,7 @@ export default function Inputs() {
                     <p>Full Time Only</p>
                 </div>
                 <Button primary>Search</Button>
+                <Button><img src={serchIcon}/></Button>
             </div>
         </div>
     )

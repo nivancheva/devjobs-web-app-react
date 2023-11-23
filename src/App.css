@@ -4,15 +4,28 @@
   background-size: contain;
 }
 
+.load-more_button {
+  text-align: center;
+  padding-block: 2rem 3.183rem;
+}
+
 @media (min-width:768px) {
   .wrapper {
       background-image: url('/assets/tablet/bg-pattern-header.svg');
+  }
+
+  .load-more_button {
+    padding-block: 3.5rem 3.183rem;
   }
 }
 
 @media (min-width:850px) {
   .wrapper {
       background-image: url('/assets/desktop/bg-pattern-header.svg');
+  }
+
+  .load-more_button {
+    padding-block: 3.5rem 6.5rem;
   }
 }
 
