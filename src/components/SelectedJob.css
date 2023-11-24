@@ -19,13 +19,29 @@
     margin-top: 0;
 }
 
-@media (max-width:767rem) {
+.job-description_footer-wrapper {
+    background-color: var(--card-color-bg);
+    padding-block: 1.375rem;
+    margin-top: 4rem;
+    color: var(--job-decription-color);
+}
+
+.job-description_footer {
+    justify-content: space-between;
+}
+
+
+@media (max-width:767px) {
     .job-position-wrapper {
         margin-bottom: 1.563rem;
     }
 
     .button-wrapper {
         padding-block: 1.563rem;
+    }
+
+    .job-name_footer {
+        display: none;
     }
 }
 
@@ -43,10 +59,18 @@
     .job-description {
         margin-top: 2.5rem;;
     }
+
+    .job-description_footer-wrapper {
+        margin-top: 3.313rem;
+    }
 }
 
 @media (min-width:850px) {
     .container.job-container {
         max-width: 730px;
+    }
+
+    .job-description_footer-wrapper {
+        margin-top: 5rem;
     }
 }

@@ -125,10 +125,12 @@ a.button {
   background-color: var(--btn-secondary-hover);
 }
 
-@media (max-width:767rem) {
+@media (max-width:767px) {
     .button {
         width: 100%;
+        text-align: center;
     }
+
 }
 
 form {
