@@ -5,7 +5,6 @@
 .company-header {
     margin-bottom: 1.5rem;
     border-radius: var(--border-radius);
-    overflow: hidden;
 }
 
 .logo-bg {
@@ -56,14 +55,20 @@
         position: relative;
     }
 
+    .company-site {
+        border-radius: var(--border-radius);
+    }
+
     .logo-bg {
         position: absolute;
-        top:0;
+        top: 0;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 50px;
         height: 50px;
         border-radius: 1rem;
+        
+        z-index: 100;
     }
 
     .company-btn {
@@ -88,6 +93,7 @@
 @media (min-width:768px) {
     .company-header {
         margin-bottom: 1.5rem;
+        overflow: hidden;
 
         display: flex;
         align-items: center;
