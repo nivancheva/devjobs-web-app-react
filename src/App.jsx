@@ -11,7 +11,7 @@ const PAGE_SIZE = 12;
 
 function App() {
   const [cards, setCards] = useState(dataJson.slice(0, PAGE_SIZE));
-  const [selectedJob, setSelectedJob] = useState(dataJson[0]);
+  const [selectedJob, setSelectedJob] = useState();
 
   function onJobClick(id) {
     const job = cards.find(c => c.id === id);
