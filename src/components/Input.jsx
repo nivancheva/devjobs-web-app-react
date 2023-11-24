@@ -1,9 +1,9 @@
 
-export default function Input({ onsubmit, image, placeholder }) {
+export default function Input({ image, placeholder, reverse }) {
     return (
-        <form>
+        <div className={`input-wrapper ${reverse ? "reverse" : ""}`}>
             <img className="input-icon" src={image}/>
             <input className="input" placeholder={placeholder}/>
-        </form>
+        </div>
     )
 }
