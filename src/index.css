@@ -138,21 +138,12 @@ form {
 }
 
 .input {
-  padding-block: 1.75rem;
-  padding-left: 4.5rem;
   outline: 0;
   border: 0;
   color: var(--clr-input-text);
   background-color: var(--clr-input-bg);
   text-transform: capitalize;
   width: 100%;
-}
-
-.input-icon {
-  position: absolute;
-  bottom: 50%;
-  left: 2rem;
-  transform: translate(0, 50%);
 }
 
 ul {
@@ -187,7 +178,7 @@ li {
   counter-increment: li
 }
 
-@media (min-width: 850px) {
+@media (min-width: 800px) {
   .container {
     max-width: 1110px;
   }

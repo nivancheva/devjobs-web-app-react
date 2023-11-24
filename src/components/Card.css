@@ -68,7 +68,7 @@
     }
 }
 
-@media (min-width:850px) {
+@media (min-width:800px) {
     .card-container {
         max-width: 350px;
     }

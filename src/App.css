@@ -19,7 +19,7 @@
   }
 }
 
-@media (min-width:850px) {
+@media (min-width:800px) {
   .wrapper {
       background-image: url('/assets/desktop/bg-pattern-header.svg');
   }
@@ -45,7 +45,7 @@
   }
 }
 
-@media (min-width:850px) {
+@media (min-width:800px) {
   .cards-container {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.85rem;
