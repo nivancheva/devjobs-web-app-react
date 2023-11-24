@@ -5,8 +5,19 @@ export default function SelectedJob({ job }) {
     return (
         <>
             <div className='container job-container'>
-                <div>
-                    
+                <div className='company-header'>
+                    <div className='logo-bg' style={{backgroundColor: job.logoBackground}}>
+                        <img className='inner-logo' src={job.logo}/>
+                    </div>
+                    <div className='company-site'>
+                        <div>
+                            <h3>{job.company}</h3>
+                            <a>{job.website}</a>
+                        </div>
+                        <div className='company-btn'>
+                            <Button href={job.website}>Company Site</Button>
+                        </div>
+                    </div>
                 </div>
 
                 <div className='job-details grid gap-4'>
