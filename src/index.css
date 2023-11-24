@@ -140,7 +140,6 @@ form {
 .input {
   padding-block: 1.75rem;
   padding-left: 4.5rem;
-  border-radius: var(--border-radius);
   outline: 0;
   border: 0;
   color: var(--clr-input-text);
