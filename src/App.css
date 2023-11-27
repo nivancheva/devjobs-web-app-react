@@ -9,6 +9,12 @@
   padding-block: 2rem 3.183rem;
 }
 
+.cards-container {
+  display: grid;
+  gap: 3.063rem;
+  margin-top: 3.563rem;
+}
+
 @media (min-width:768px) {
   .wrapper {
       background-image: url('/assets/tablet/bg-pattern-header.svg');
@@ -17,6 +23,12 @@
 
   .load-more_button {
     padding-block: 3.5rem 3.183rem;
+  }
+
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 4.375rem;
   }
 }
 
@@ -28,28 +40,10 @@
   .load-more_button {
     padding-block: 3.5rem 6.5rem;
   }
-}
 
-
-
-.cards-container {
-  display: grid;
-  gap: 3.063rem;
-  margin-top: 6.263rem;
-}
-
-@media (min-width:768px) {
-  .cards-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    margin-top: 6.875rem;
-  }
-}
-
-@media (min-width:800px) {
   .cards-container {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.85rem;
-    margin-top: 9rem;
+    margin-top: 6.563rem;
   }
 }
