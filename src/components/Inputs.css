@@ -6,12 +6,6 @@
     color: var(--clr-input-text);
 }
 
-.input-wrapper {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
 
 @media (max-width:767px) {
     .inputs-mobile {
