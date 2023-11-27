@@ -86,6 +86,9 @@
         grid-template-columns: 1fr auto auto;
         border-radius: var(--border-radius);
         overflow: hidden;
+        background-color: var(--clr-input-bg);
+        color: var(--clr-input-text);
+        padding: 1rem;
     }
 
     .filter {
@@ -93,7 +96,6 @@
         align-items: center;
         gap: 1.75rem;
         background-color: var(--clr-input-bg);
-        padding-inline: 1.25rem 1rem;
     }
 
     .checkbox p {
