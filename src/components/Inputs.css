@@ -94,7 +94,7 @@
     }
 
     .inputs-wrapper-desktop {
-        grid-template-columns: 1fr auto auto;
+        grid-template-columns: repeat(3, 1fr);
         border-radius: var(--border-radius);
         overflow: hidden;
         background-color: var(--clr-input-bg);
@@ -133,4 +133,7 @@
 }
 
 @media (min-width:800px) {
+    .inputs-wrapper-desktop {
+        grid-template-columns: 1fr auto auto;
+    }
 }
