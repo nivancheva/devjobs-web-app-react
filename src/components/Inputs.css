@@ -92,8 +92,8 @@
         background-color: var(--clr-input-bg);
     }
 
-    .checkbox p {
-        margin-left: 2rem;
+    .checkbox {
+        display: flex;
     }
 }
 
