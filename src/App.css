@@ -1,7 +1,7 @@
 .wrapper {
   background-image: url('/assets/mobile/bg-pattern-header.svg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100% 136px;
 }
 
 .load-more_button {
@@ -12,6 +12,7 @@
 @media (min-width:768px) {
   .wrapper {
       background-image: url('/assets/tablet/bg-pattern-header.svg');
+      background-size: 100% 160px;
   }
 
   .load-more_button {
