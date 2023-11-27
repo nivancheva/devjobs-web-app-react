@@ -53,7 +53,6 @@ export default function Inputs({ onSearch }) {
                     </div>
                 }
                 
-                
             </div>
         </div>
     )

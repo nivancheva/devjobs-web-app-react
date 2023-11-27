@@ -100,7 +100,25 @@
         background-color: var(--clr-input-bg);
         color: var(--clr-input-text);
         padding: 1rem;
+
+        position: relative;
     }
+
+    .input-wrapper {
+        position: relative;
+    }
+
+    .input-wrapper::after {
+        position: absolute;
+        content: '';
+        top: -1rem;
+        bottom: -1rem;
+        right: 1.5rem;
+        background-color: var(--clr-dark-gray);
+        width: 1px;
+        opacity: .3;
+    }
+
 
     .filter {
         display: flex;
