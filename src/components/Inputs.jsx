@@ -9,6 +9,9 @@ import { useState } from 'react';
 
 export default function Inputs({ onSearch }) {
     const [modalVisible, setModalVisible] = useState(false)
+    const [position, setPosition] = useState("");
+    const [location, setLocation] = useState("");
+    const [fullTime, setFullTime] = useState(false);
 
     function showFilterBox() {
         setModalVisible(true);
@@ -16,20 +19,20 @@ export default function Inputs({ onSearch }) {
 
     function onSearchButtonClick() {
         setModalVisible(false);
-        onSearch();
+        onSearch(position, location, fullTime);
     }
 
     return (
         <div className="container">
             <div className='inputs-wrapper-desktop'>
-                <Input image={serchIcon} placeholder='Filter by title…'/>
-                <Input image={locationIcon} placeholder='Filter by location…'/>
+                <Input value={position} onChange={setPosition} image={serchIcon} placeholder='Filter by title…'/>
+                <Input value={location} onChange={setLocation} image={locationIcon} placeholder='Filter by location…'/>
                 <div className='filter'>
                     <div className='checkbox'>
-                        <Checkbox />
+                        <Checkbox value={fullTime} onChange={setFullTime} />
                         <p>Full Time Only</p>
                     </div>
-                    <Button primary>Search</Button>
+                    <Button onClick={onSearchButtonClick} primary>Search</Button>
                 </div>
             </div>
 

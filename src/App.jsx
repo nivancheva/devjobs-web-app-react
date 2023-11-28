@@ -11,6 +11,7 @@ const PAGE_SIZE = 12;
 
 function App() {
   const [cards, setCards] = useState(dataJson.slice(0, PAGE_SIZE));
+  const [allCards, setAllCards] = useState(dataJson);
   const [selectedJob, setSelectedJob] = useState();
 
   function onJobClick(id) {
@@ -22,6 +23,15 @@ function App() {
     setCards(cards => [...cards, ...dataJson.slice(cards.length)]);
   }
 
+  function filterCards(position, location, fullTime) {
+    let result = allCards
+      .filter(c => c.position.indexOf(position) > -1)
+      .filter(c => c.location.indexOf(location) > -1)
+      .filter(c => !fullTime || fullTime && c.contract === "Full Time");
+
+      setCards(result);
+  }
+
   function renderContent() {
     if (selectedJob) {
       return <SelectedJob job={selectedJob}/>
@@ -29,7 +39,7 @@ function App() {
     }
     else {
       return <div>
-          <Inputs />
+          <Inputs onSearch={filterCards} />
           
           <div className='container cards-container'>
               {cards.map((card) => {
