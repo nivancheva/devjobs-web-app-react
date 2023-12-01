@@ -4,14 +4,14 @@ import dataJson from './data.json';
 import { useState } from 'react';
 import Header from './components/Header';
 import Inputs from './components/Inputs';
-import Button from './components/Button';
+// import Button from './components/Button';
 import SelectedJob from './components/SelectedJob';
 
 const PAGE_SIZE = 12;
 
 function App() {
-  const [cards, setCards] = useState(dataJson.slice(0, PAGE_SIZE));
-  const [allCards, setAllCards] = useState(dataJson);
+  const [cards, setCards] = useState(dataJson);
+  const [allCards] = useState(dataJson);
   const [selectedJob, setSelectedJob] = useState();
 
   function onJobClick(id) {
@@ -19,9 +19,9 @@ function App() {
     setSelectedJob(job);
   }
 
-  function onLoadMoreClick() {
-    setCards(cards => [...cards, ...dataJson.slice(cards.length)]);
-  }
+  // function onLoadMoreClick() {
+  //   setCards(cards => [...cards, ...dataJson.slice(cards.length)]);
+  // }
 
   function filterCards(position, location, fullTime) {
     let result = allCards
@@ -49,11 +49,11 @@ function App() {
               })}
           </div>
           
-          { dataJson.length !== cards.length &&
+          {/* { dataJson.length !== cards.length &&
             <div className='load-more_button container'>
               <Button primary onClick={onLoadMoreClick}>Load More</Button>
             </div>
-          }
+          } */}
           
         </div>;
     }
